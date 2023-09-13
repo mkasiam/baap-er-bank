@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Github Editor</title>
+  </head>
+  <body>
+    <h1 id="message">Hello this me from github</h1>
+    <input id="text-field" type="text" placeholder="write 'delete'" />
+    <button id="delete-btn" disabled>Delete</button>
+    <script>
+      document
+        .getElementById("delete-btn")
+        .addEventListener("click", function () {
+          const Message = document.getElementById("message");
+          Message.style.display = "none";
+        });
+      document
+        .getElementById("text-field")
+        .addEventListener("keyup", function (event) {
+          const messageInput = event.target.value;
+
+          const deleteButtonElement = document.getElementById("delete-btn");
+
+          if (messageInput === "delete") {
+            deleteButtonElement.removeAttribute("disabled");
+          } else {
+            deleteButtonElement.setAttribute("disabled", true);
+          }
+        });
+    </script>
+  </body>
+</html>

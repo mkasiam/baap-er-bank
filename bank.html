@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Inside</title>
+  </head>
+  <body>
+    <header class="my-10">
+      <h1 class="text-6xl bold text-center">
+        Let's get Some Money
+        <span class="text-orange-600 font-semibold">From Bapp er Bank</span>
+      </h1>
+    </header>
+    <main>
+      <section class="bg-blue-200 w-9/12 mx-auto p-10 rounded-xl space-y-7">
+        <!-- Deposit Amount  -->
+        <div class="grid grid-cols-3 space-x-4">
+          <div class="text-white bg-green-500 rounded-xl p-6 space-y-2">
+            <h1 class="text-2xl font-bold">Deposit</h1>
+            <p class="text-5xl font-medium">
+              $<span id="deposit-money">00</span>
+            </p>
+          </div>
+          <!-- Withdraw Amount  -->
+          <div class="text-white bg-yellow-500 rounded-xl p-6 space-y-2">
+            <h1 class="text-2xl font-bold">Withdraw</h1>
+            <p class="text-5xl font-medium">
+              $<span id="withdraw-amount">00</span>
+            </p>
+          </div>
+          <!-- Total Balance Amount  -->
+          <div class="text-white bg-violet-500 rounded-xl p-6 space-y-2">
+            <h1 class="text-2xl font-bold">Balance</h1>
+            <p class="text-5xl font-medium">
+              $<span id="total-balance">00</span>
+            </p>
+          </div>
+        </div>
+        <!-- Deposit and Withdraw -->
+        <div class="grid grid-cols-2 gap-10">
+          <!-- Deposit Input area  -->
+          <div class="text-white bg-fuchsia-400 rounded-xl p-6 space-y-3">
+            <div class="flex flex-col gap-4">
+              <h1 class="text-3xl font-medium">Deposit</h1>
+              <input
+                type=""
+                name=""
+                id="deposit-input"
+                placeholder="Please Enter Your Deposit Money"
+                class="p-2 rounded outline-0 text-black text-xl"
+              />
+            </div>
+            <button
+              id="deposit-btn"
+              class="bg-red-600 px-8 py-2 rounded text-xl font-medium"
+            >
+              Deposit
+            </button>
+          </div>
+          <!-- Withdraw Input area  -->
+          <div class="text-white bg-teal-500 rounded-xl p-6 space-y-3">
+            <div class="flex flex-col gap-4">
+              <h1 class="text-3xl font-medium">Withdraw</h1>
+              <input
+                type=""
+                name=""
+                id="withdraw-input"
+                placeholder="Please Enter Your Deposit Money"
+                class="p-2 rounded outline-0 text-black text-xl"
+              />
+            </div>
+            <button
+              id="withdraw-btn"
+              class="bg-red-600 px-8 py-2 rounded text-xl font-medium"
+            >
+              Withdraw
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/bank.js"></script>
+  </body>
+</html>

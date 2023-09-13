@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+  </head>
+  <body>
+    <h1>There are more more events in there</h1>
+    <input id="text-field" type="text" />
+    <button id="btn-more">Click for More</button>
+    <script>
+      document
+        .getElementById("text-field")
+        .addEventListener("keypress", function (events) {
+          console.log(events.target.value);
+        });
+      document
+        .getElementById("btn-more")
+        .addEventListener("click", function () {});
+    </script>
+  </body>
+</html>
